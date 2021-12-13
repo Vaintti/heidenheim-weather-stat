@@ -1,7 +1,7 @@
-export default function TemperatureComponent(props: {temperature: number}) {
+export default function TemperatureComponent(props: { weather: Weather }) {
     return (
         <div className="temperature-main">
-            {props.temperature} °C
+            {props.weather.temperature} °C
         </div>
     )
 }

@@ -3,6 +3,7 @@ import './App.css';
 import Api from './api';
 import TemperatureComponent from './components/TemperatureComponent';
 import { CircleLoader } from 'react-spinners';
+import WeatherDescriptionComponent from './components/WeatherDescriptionComponent';
 
 function App() {
   Api.getWeather('heidenheim')
@@ -17,7 +18,8 @@ function App() {
 
   return (
     <div className="App">
-      <TemperatureComponent temperature={weather.temperature}/>
+      <TemperatureComponent weather={weather}/>
+      <WeatherDescriptionComponent weather={weather}/>
     </div>
   );
 }

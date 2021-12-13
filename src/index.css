@@ -27,3 +27,7 @@ code {
   font-size: 2rem;
   font-weight: bold;
 }
+
+.weather-description {
+  font-size: 1.5rem;
+}
