@@ -22,3 +22,8 @@ code {
   width: 100px;
   height: 100px;
 }
+
+.temperature-main {
+  font-size: 2rem;
+  font-weight: bold;
+}
