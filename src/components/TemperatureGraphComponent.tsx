@@ -19,7 +19,7 @@ export default function TemperatureGraphComponent(props: { hourlyWeather: Weathe
 
     return (
         <div id='temperature-graph'>
-            <h3>Temperature in next 24 hours</h3>
+            <h3>Temperature for the next 24 hours</h3>
             <div>{maxTemp} °C</div>
             <ScaleSVG width={width} height={height}>
                 <LinePath
