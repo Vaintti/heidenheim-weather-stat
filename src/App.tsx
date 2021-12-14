@@ -33,7 +33,11 @@ function App() {
 
   // Loading state
   if (weather === null || hourlyWeather === null) {
-    return <div className="loader"><CircleLoader color="white" size={100}/></div>;
+    return (
+      <div className="App">
+        <div className="loader"><CircleLoader color="white" size={100}/></div>
+      </div>
+    );
   };
 
   return (

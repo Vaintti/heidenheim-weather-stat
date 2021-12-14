@@ -16,6 +16,8 @@ code {
 .loader {
   width: 100px;
   height: 100px;
+  align-self: center;
+  display: flex;
 }
 
 .temperature-main {
