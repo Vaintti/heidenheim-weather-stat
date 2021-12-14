@@ -4,4 +4,4 @@ export default function WeatherDescriptionComponent (props: { weather: Weather }
             {props.weather.description}
         </i>
     )
-}
+};

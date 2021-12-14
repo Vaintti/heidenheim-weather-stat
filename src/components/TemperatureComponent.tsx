@@ -4,4 +4,4 @@ export default function TemperatureComponent(props: { weather: Weather }) {
             {props.weather.temperature} °C
         </div>
     )
-}
+};
