@@ -4,7 +4,7 @@ import { LinePath } from '@visx/shape';
 
 export default function TemperatureGraphComponent(props: { hourlyWeather: Weather[] }) {
     const height = 100;
-    const width = 600;
+    const width = 500;
     const dtFloor = props.hourlyWeather[0].dt;
     const dtCeil = props.hourlyWeather[props.hourlyWeather.length - 1].dt;
     const multiplier = width / (dtCeil - dtFloor);
@@ -30,8 +30,8 @@ export default function TemperatureGraphComponent(props: { hourlyWeather: Weathe
                     stroke='white'
                     strokeWidth={2}
                     shapeRendering='geometricPrecision'
-                    width='100vw'
-                    height='500px'
+                    width={width}
+                    height={height}
                 />
             </ScaleSVG>
             <div>{minTemp} °C</div>
