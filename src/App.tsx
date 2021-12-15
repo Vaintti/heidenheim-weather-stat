@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="App" style={{background: `linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${getBackgroundImageForWeather(weather)})`}}>
       <h1>Heidhenheim, Germany</h1>
-      <div className='main-partition' style={{ justifyContent: 'end' }}>
+      <div className='main-partition' style={{ justifyContent: 'flex-end' }}>
         <TemperatureComponent weather={weather}/>
         <WeatherDescriptionComponent weather={weather}/>
       </div>
